@@ -11,10 +11,15 @@
 #printf "%s cpu" $cnt
 #if [ $cnt<4 ]
 #then printf "Too few cores (%s) |n" $cen  >> diary.txt
+
 read txt
+
+#debug statement 
 printf "%s is the input\n" $txt
+
 thedate=$( date )
-print "%s %s" "$thedate" $txt
+
+printf "%s %s" "$thedate" $txt >> diary.txt
 
 
 
